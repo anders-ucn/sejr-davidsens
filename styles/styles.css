@@ -1,0 +1,514 @@
+/* PRESETS */
+:root {
+  --primary-light: #4d80b2;
+  --primary-normal: #22476d;
+  --primary-dark: #1a3550;
+  --secondary-light: #e5d7e8;
+  --secondary-normal: #bc9ec1;
+  --secondary-dark: #907895;
+  --contrast-light: #f2fff9;
+  --contrast-normal: #e2fcef;
+  --contrast-dark: #abcebc;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--contrast-light);
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Work Sans";
+  color: var(--primary-dark);
+}
+
+h1 {
+  font-family: "Libre Baskerville";
+  font-size: 52px;
+  font-weight: bold;
+  line-height: auto;
+}
+
+h2 {
+  font-family: "Libre Baskerville";
+  font-size: 42px;
+  font-weight: bold;
+  line-height: auto;
+}
+
+h3 {
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: auto;
+}
+
+p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 31.5px;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: var(--primary-dark);
+  color: var(--contrast-light);
+  border: solid 3px var(--primary-dark);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--primary-dark);
+  border: solid 3px var(--primary-dark);
+}
+
+/* HEADER OG NAV */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  align-items: center;
+  background-color: var(--contrast-light);
+  z-index: 100;
+}
+
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+header a:hover {
+  border-bottom: solid 4px var(--secondary-light);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  gap: 3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.active {
+  border-bottom: solid 4px var(--secondary-dark);
+  color: var(--secondary-dark);
+}
+
+.active:hover {
+  border-bottom: solid 4px var(--secondary-dark);
+}
+
+.logo img {
+  width: 300px;
+}
+
+.logo a {
+  border-bottom: 0 !important;
+}
+
+section {
+  padding: 0 10rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO SEKTION */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-content {
+  width: 50%;
+}
+
+.hero {
+  padding: 10rem 10rem;
+  background-image: url(../assets/img/hero-bg.svg);
+  /* https://www.colourbox.dk/billede/kaeledyr-smilende-glad-billede-42140379 */
+  background-size: cover;
+}
+
+.hero-content svg {
+  position: absolute;
+}
+
+.hero-content {
+  width: 90%;
+  color: var(--contrast-normal);
+}
+
+.hero-image {
+  width: 80%;
+}
+
+.buttons a:hover {
+  border-bottom: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero .primary-btn {
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
+  border: solid 3px var(--secondary-light);
+}
+
+.hero .secondary-btn {
+  background-color: transparent;
+  color: var(--secondary-light);
+  border: solid 3px var(--secondary-light);
+}
+
+.paw-large {
+  position: absolute;
+  left: 40vw;
+  top: 70vh;
+}
+
+.paw-medium {
+  position: absolute;
+  left: 80vw;
+  top: 20vh;
+}
+
+.paw-small {
+  position: absolute;
+  left: 20vw;
+  top: 15vh;
+}
+
+/* IMAGE WITH TEXT */
+
+.sub-heading {
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-dark);
+  font-weight: 500;
+}
+
+.image-with-text {
+  padding: 5rem 10rem;
+}
+
+.image-with-text img {
+  border-radius: 50%;
+}
+
+.img-right {
+  justify-content: flex-end;
+}
+
+.img-left {
+  justify-content: flex-start;
+}
+
+#hund-der-kigger-op {
+  border-radius: 0px;
+}
+
+/* ICONS WITH TEXT */
+
+.icon {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon:hover {
+  box-shadow: 20px 20px 30px 0px rgba(43, 43, 43, 0.15);
+  border: solid 3px var(--secondary-dark);
+  cursor: pointer;
+}
+
+.icons-with-text .flex-content {
+  flex-wrap: wrap;
+}
+
+.icon img {
+  width: 50px;
+}
+
+.icons-with-text {
+  gap: 2rem;
+}
+
+/* SUB-PAGE HERO */
+
+.sub-page-hero {
+  color: var(--contrast-light);
+  background-color: var(--primary-dark);
+}
+
+.sub-page-hero h1 {
+  padding: 1rem 0rem;
+  margin: 0;
+}
+
+/* CARDS */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 10px rgba(43, 43, 43, 0.15);
+  height: auto;
+}
+
+.cards-wrapper {
+  align-items: stretch !important;
+  justify-content: space-evenly;
+}
+
+.card h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.card p {
+  width: 80%;
+}
+
+.heading-center {
+  text-align: center;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.card-text-additional {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-text-additional p {
+  width: 50vw;
+}
+
+/* ADOPTION PROCESS */
+
+.adoption-process {
+  background-color: var(--primary-dark);
+  color: var(--contrast-light);
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.center-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.center-heading h2 {
+  width: 60vw;
+}
+
+.center-heading p {
+  width: 60vw;
+  margin-top: -1rem;
+}
+
+.process-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 1rem;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 10px rgba(43, 43, 43, 0.15);
+  height: auto;
+  background-color: var(--contrast-light);
+  color: var(--primary-dark);
+}
+
+.process-number {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: solid 2px var(--secondary-light);
+}
+
+.process-content {
+  width: 80%;
+  padding-left: 4rem;
+}
+
+.border {
+  border-bottom: solid 2px var(--secondary-light);
+}
+
+.adoption-process .primary-btn {
+  background-color: var(--secondary-dark);
+  color: var(--contrast-light);
+  border: solid 3px var(--secondary-dark);
+}
+
+.process-button {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FEATURED DOGS */
+
+.featured-dogs {
+  padding: 5rem 10rem;
+}
+
+.featured-dogs .card h3 {
+  text-align: center;
+  margin: auto;
+}
+
+.featured-dogs .card p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.featured-dogs .card button {
+  margin-bottom: 1rem;
+}
+
+.featured-dogs .sub-heading {
+  text-align: center;
+  margin-top: -2.5rem;
+}
+
+.featured-dogs .center-heading button {
+  margin-top: 2rem;
+}
+
+.featured-dogs .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--primary-dark);
+  color: var(--contrast-light);
+  padding: 5rem 10rem 0rem 10rem;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .footer-row div {
+  width: 33%;
+}
+
+footer h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .sociale {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .secondary-btn {
+  background-color: transparent;
+  color: var(--secondary-light);
+  border: solid 3px var(--secondary-light);
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+footer svg {
+  color: var(--secondary-light);
+}
+
+/* VIDEO */
+
+.video-hero {
+  padding: 5rem 10rem;
+}
+
+.video-hero video {
+  width: 100%;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 10px rgba(43, 43, 43, 0.15);
+}
+
+/* TESTIMONIALS */
+
+.testimonials .card {
+  width: 33%;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+.testimonials {
+  padding: 5rem 10rem;
+}
+
+.objects {
+  align-items: start !important;
+  gap: 10rem;
+  margin-bottom: 5rem;
+}
+
+.left-align {
+  width: 50%;
+}
